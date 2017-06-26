@@ -13,10 +13,10 @@ namespace Automation.PageObjects
     {
         private IWebDriver _driver;
         [FindsBy(How = How.Id, Using = "usernameFieldId")]
-        private IWebElement userName { get; set; }
+        private IWebElement UserName { get; set; }
 
         [FindsBy(How = How.Id, Using = "submitFieldId")]
-        private IWebElement submitButton { get; set; }
+        private IWebElement SubmitButton { get; set; }
 
         public LoginPage(IWebDriver driver)
         {
@@ -28,7 +28,7 @@ namespace Automation.PageObjects
 
         public LoginPage ClickLoginExpectingError()
         {
-            submitButton.Click();
+            SubmitButton.Click();
             return new LoginPage(_driver);
         }
     }
