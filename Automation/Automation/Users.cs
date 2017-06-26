@@ -19,7 +19,7 @@ namespace Automation
             }
         }
 
-        public static User Admin = new User("administrator", "qwerty");
-        public static User VO = new User("vo", "qwerty");
+        public static User Admin = new User("user1", "qwerty");
+        public static User VO = new User("user2", "qwerty");
     }
 }
