@@ -19,6 +19,7 @@ namespace Automation.SetUp
             {
                 _driver = new ChromeDriver(@"Drivers");
             }
+            _driver.Manage().Window.Maximize();
             return _driver;
         }
     }
