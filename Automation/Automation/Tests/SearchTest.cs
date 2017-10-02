@@ -12,7 +12,7 @@ using Automation.PageObjects;
 namespace Automation.Tests
 {
     [TestFixture]
-    public class LoginTest
+    public class SearchTest
     {
         private IWebDriver _driver;
 
@@ -30,9 +30,14 @@ namespace Automation.Tests
         }
 
         [Test]
-        public void BadEmailAddressTest()
+        public void SuccesfulSearchTest()
         {
-            var loginPage = new LoginPage(_driver);
+            var searchpPage = new SearchPage(_driver);
+            searchpPage.FillInSearchField("search text");
+            SearchPage searchResult = searchpPage.SubmitSearch();
+            
+
+
 
         }
     }

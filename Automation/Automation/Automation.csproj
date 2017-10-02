@@ -51,11 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PageObjects\LoginPage.cs" />
+    <Compile Include="PageObjects\SearchPage.cs" />
     <Compile Include="SetUp\DriverSetup.cs" />
     <Compile Include="SetUp\TestConfiguration.cs" />
     <Compile Include="SetUp\TestDriverFactory.cs" />
-    <Compile Include="Tests\LoginTest.cs" />
+    <Compile Include="Tests\SearchTest.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
